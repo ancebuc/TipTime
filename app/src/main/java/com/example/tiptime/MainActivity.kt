@@ -7,7 +7,11 @@ import java.text.NumberFormat
 
 
 class MainActivity : AppCompatActivity() {
-
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+    }
+/*
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,5 +48,5 @@ class MainActivity : AppCompatActivity() {
         val formattedTip = NumberFormat.getCurrencyInstance().format(tip)
         binding.tipAmount.text = getString(R.string.tip_amount, formattedTip)
     }
-
+*/
 }
